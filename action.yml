@@ -1,7 +1,7 @@
 # action.yml
-name: 'Tag/Release on Push Action'
+name: 'Release Action'
 description: 'Creates a Tag/Release on Push. Generates Release Notes. Customizable with Pull Request Labels'
-author: 'rymndhng'
+author: 'rohail'
 inputs:
   bump_version_scheme:
     description: 'The bumping scheme to use by default. One of minor|major|patch|norelease'

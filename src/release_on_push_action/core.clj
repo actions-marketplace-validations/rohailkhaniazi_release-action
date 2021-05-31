@@ -62,7 +62,7 @@
       :else (keyword (:bump-version-scheme context)))))
 
 (defn get-tagged-version [latest-release]
-  (let [tag      (get latest-release :tag_name "0.0.0")
+  (let [tag      (get latest-release :tag_name "0.0")
         [prefix] (str/split tag #"\d+\.\d+\.\d+")] ;this strips any leading characters before the semver string
     (subs tag (count prefix))))
 
