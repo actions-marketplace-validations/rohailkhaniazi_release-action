@@ -1,10 +1,10 @@
 # See https://hub.docker.com/r/babashka/babashka
 FROM babashka/babashka:0.3.5
 
-WORKDIR /var/src/release-on-push-action
+WORKDIR /var/src/release-action
 
 COPY src src
 
-ENV BABASHKA_CLASSPATH /var/src/release-on-push-action/src
+ENV BABASHKA_CLASSPATH /var/src/release-action/src
 
-ENTRYPOINT [ "bb", "--main", "release-on-push-action.core" ]
+ENTRYPOINT [ "bb", "--main", "release-action.core" ]
