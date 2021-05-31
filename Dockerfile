@@ -7,4 +7,4 @@ COPY src src
 
 ENV BABASHKA_CLASSPATH /var/src/release-action/src
 
-ENTRYPOINT [ "bb", "--main", "release-action.core" ]
+ENTRYPOINT [ "bb", "--main", "release-on-push-action.core" ]
